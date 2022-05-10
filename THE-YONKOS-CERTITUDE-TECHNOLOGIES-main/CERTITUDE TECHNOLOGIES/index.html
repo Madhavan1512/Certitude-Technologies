@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>WELCOME</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="./images/logos/homeicon.png">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">HOME</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="smartphones.html">SMART PHONES</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="televisions.html">TV</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="headphones.html">HEADPHONES</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="laptops.html">LAPTOPS</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="about.html">ABOUT</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="contact.html">CONTANCT US</a>
+        </div>
+      </div>
+
+      
+      <div class="right-side">
+        <div class="brand" style="font-size: 1.2rem;">
+          CERTITUDE TECHNOLOGIES
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio1.jpg)"></div>
+
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              
+            </div>
+
+            <div class="subtitle">SERVICE TO THE WORLD IS SERVICE TO GOD . We know that really well and we are here to do just that</div>
+          </div>
+        </div><br><br><br><br><br><br><br>
+        <h1>
+         <div style="font-size: 4rem; position: relative ;color: darkturquoise;left: 50%;text-align: center;"><u> CERTITUDE TECHNOLOGIES</u></div><br><br>
+          <div style="font-size:2rem; color: cornflowerblue;position: relative;left: 50%;text-align: center;">We are a group of people who have the desire to announce or produce the best information about the latest technology models created by some of the greatest technology experts and companies that dominate the world market share in terms of the sophisticated gadgets like mobiles , laptops , headphones and also dive into the television market . We analyse the list of latest models that are produced and give our fair share of reviews on which one is the best and which are the ones that are affordable, and a bargain buy . We share the details regarding the technical aspects of the variety of models . We want our viewers to have a clear look at which model suits their requirements the most and which ones they can afford to buy.
+            <br><br>
+
+Our Motto is to help our users : <br>
+1)Decide which model they can afford and the ones that shall suit them <br>
+2)Know what the recent models are , that are released by the top companies in the world <br>
+3)Understand the price range of the model , that helps them remain aware of the costs and decide which website to buy it accordingly 
+The latest technologies that are evolving , have the ability to neutralise the ever growing demand of users . Our job is to let people know what they are buying before they jump into purchasing different gadgets and models . <br></div>
+
+        </h1>
+        
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>
